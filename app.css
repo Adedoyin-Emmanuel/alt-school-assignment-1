@@ -28,4 +28,25 @@ html {
   font-family: Almarena !important;
   height: 100%;
   width: 100%;
+  margin: 0;
+}
+
+:root {
+  --alt-school-banner-color: rgb(255, 246, 238);
+}
+
+
+.banner {
+  background-color: var(--alt-school-banner-color);
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+  .banner {
+    display: none;
+  }
 }
