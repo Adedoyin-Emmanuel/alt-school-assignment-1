@@ -3,9 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="canonical" href="https://portal.altschoolafrica.com" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="description" content="About Adedoyin Emmanuel Adeniyi" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/alt-school-logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/alt-school-logo.png"
+    />
+    <meta property="og:title" content="About Me, Adedoyin Emmanuel Adeniyi" />
+    <meta
+      property="og:description"
+      content="About Me, Adedoyin Emmanuel Adeniyi"
+    />
+    <meta property="og:image" content="/images/altschool.png" />
+    <meta property="og:url" content="https://portal.altschoolafrica.com" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="next-head-count" content="15" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>About Me | Adedoyin Emmanuel Adeniyi</title>
+    <style>
+      body,
+      html {
+        font-family: Almarena;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 4px;
+        background-color: var(--alt-school-banner-color);
+      }
+
+      p {
+        font-family: AlmarenaDisplayLight !important;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      .experience {
+        margin-top: 20px;
+      }
+
+      .connect {
+        width: 100%;
+        padding: 1rem 0px;
+        background: rgb(106, 111, 245);
+        color: rgb(255, 255, 255);
+        font-family: Almarena, sans-serif;
+        display: flex;
+        border: none;
+        border-radius: 4px;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      .border-button {
+        border: 2px solid rgb(106, 111, 245);
+        border-radius: 4px;
+        width: 50px;
+        height: 30px;
+        background: white;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    hello world
+    <header>
+      <h1>Adedoyin Emmanuel Adeniyi</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Personal Details</h2>
+        <p>
+          Hi 👋, I'm Adedoyin Emmanuel Adeniyi, a curious and passionate cloud
+          engineering student at AltSchool Africa. With 3 years of programming
+          experience, I've delved into various aspects of software development,
+          always eager to learn and grow. I'm also an ALX student cohort 11 to
+          be specific. I love doing hard things.
+        </p>
+      </section>
+      <br />
+
+      <section class="experience">
+        <h2>Reasons for Joining AltSchool</h2>
+        <p>
+          I chose AltSchool because of its innovative approach to education,
+          especially in the field of cloud engineering. The emphasis on hands-on
+          learning and practical skills aligns perfectly with my goals as a
+          developer.
+        </p>
+      </section>
+
+      <br />
+
+      <section>
+        <h2>Goals with AltSchool</h2>
+        <p>
+          My goal at AltSchool is to deepen my expertise in cloud engineering,
+          leveraging the cutting-edge curriculum and mentorship available. I
+          aspire to apply the skills and knowledge gained to solve real-world
+          problems, contributing to the tech industry's advancement.
+        </p>
+      </section>
+      <button class="connect" id="connectWithMe">Connect with me</button>
+      <br />
+
+      <a href="/">
+        <button class="border-button">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+      </a>
+    </main>
+    <script>
+      const connectWithMe = document.getElementById("connectWithMe");
+      connectWithMe.addEventListener("click", () => {
+        location.href = "https://github.com/adedoyin-emmanuel";
+      });
+    </script>
   </body>
 </html>
