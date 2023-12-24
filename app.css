@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Almarena;
+  src: url(/fonts/Almarena-Almarena.otf) format("opentype");
+}
+
+@font-face {
+  font-family: AlmarenaDisplayBold;
+  src: url(/fonts/Almarena-Almarena-Display-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: AlmarenaDisplayLight;
+  src: url(/fonts/Almarena-Almarena-Display-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: AlmarenaDisplayRegular;
+  src: url(/fonts/Almarena-Almarena-Display-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: AlmarenaLight;
+  src: url(/fonts/Almarena-Almarena-Light.otf) format("opentype");
+}
+
+body,
+html {
+  font-family: Almarena, "sans-serif";
+  height: 100%;
+  width: 100%;
+}
