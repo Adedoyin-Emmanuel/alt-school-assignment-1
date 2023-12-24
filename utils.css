@@ -64,3 +64,10 @@
 .items-stretch {
   align-items: stretch !important;
 }
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+.required {
+  color: red;
+}

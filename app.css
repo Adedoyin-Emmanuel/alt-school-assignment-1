@@ -35,6 +35,9 @@ html {
   --alt-school-banner-color: rgb(255, 246, 238);
 }
 
+.container{
+    
+}
 
 .banner {
   background-color: var(--alt-school-banner-color);

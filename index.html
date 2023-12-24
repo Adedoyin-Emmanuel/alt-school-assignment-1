@@ -48,7 +48,7 @@
     />
   </head>
   <body>
-    <main>
+    <main class="container flex">
       <!-- We've 2 sections in the page, the image kinda section and the application form -->
       <section class="banner">
         <section class="banner-header">
@@ -111,21 +111,167 @@
           <i class="fa-brands fa-linkedin-in"></i>
         </section>
         <section class="banner-copyright">
-            <p id="copyright"></p>
+          <p id="copyright"></p>
         </section>
       </section>
 
       <section class="form">
-        <section class="form-heading"></section>
+        <section class="form-heading">
+          <h1>application form</h1>
+          <p>Fill in your details</p>
+        </section>
 
-        <form action="">
-          <section class="form-group"></section>
-          <section class="form-group"></section>
-          <section class="form-group"></section>
-          <section class="form-group"></section>
-          <section class="form-group"></section>
-          <section class="form-group"></section>
-          <section class="form-group"></section>
+        <form>
+          <section class="form-group">
+            <div class="firstname">
+                  <label for="first-name" class="capitalize">
+                first name
+                <span class="required">*</span>
+            </label>
+            <input type="text" name="first-name" required placeholder="Enter first name">
+            </div>
+
+             <div class="lastname">
+                  <label for="last-name" class="capitalize">
+                last name
+                <span class="required">*</span>
+            </label>
+            <input type="text" name="last-name" required placeholder="Enter last name">
+            </div>
+          </section>
+
+          <section class="form-group">
+            <div class="gender">
+                   <label for="gender" class="capitalize">
+                gender 
+                <span class="required">*</span>
+
+                <select name="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+
+                </select>
+            </div>
+             <div class="dob">
+                   <label for="dob" class="capitalize">
+                date of birth 
+                <span class="required">*</span>
+
+             <input type="date" >
+            </div>
+          </section>
+          <section class="form-group">
+            <div class="email-address">
+                   <label for="email-address" class="capitalize">
+                email address
+                <span class="required">*</span> 
+            </label>
+            <input type="text" name="email-address" required placeholder="Enter email address">
+            </div>
+
+                <div class="education-level">
+                   <label for="education-level" class="capitalize">
+                education level
+                <span class="required">*</span>
+
+                <select name="education-level">
+                    <option value="Bsc">Bsc</option>
+                    <option value="Msc">Msc</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Doctorate (phD)">Doctorate (phD)</option>
+                    <option value="High School">High School</option>
+
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Junior / Middle School">Junior / Middle School</option>
+                    <option value="Postgraduate">Postgraduate</option>
+
+                </select>
+           
+            </div>
+          </section>
+          <section class="form-group">
+            <div class="country">
+               <label for="country" class="capitalize">
+               country
+                <span class="required">*</span>
+
+                <select name="country">
+                    <option value="Nigeria">Nigeria</option>
+
+                </select>
+            </div>
+
+              <div class="residence">
+               <label for="residence" class="capitalize">
+               state / city of residence
+                <span class="required">*</span>
+<input type="text" placeholder="Enter your state of residence">
+            </div>
+          </section>
+          <section class="form-group">
+
+               <div class="employment-status">
+                   <label for="employment-status" class="capitalize">
+               employment status
+                <span class="required">*</span>
+
+                <select name="education-level">
+                    <option value="employed">employed</option>
+                    <option value="unemployed">unemployed</option>
+                    <option value="selfemployed">selfemployed</option>
+                </select>
+           
+            </div>
+
+             <div class="phone-number">
+               <label for="residence" class="capitalize">
+              phone number
+                <span class="required">*</span>
+<input type="text" placeholder="Enter your phone number">
+            </div>
+          </section>
+          <section class="form-group">
+               <div class="school">
+                   <label for="school" class="capitalize">
+               choose school
+                <span class="required">*</span>
+
+                <select name="school">
+                    <option value="school of creativity">school of creativity</option>
+                    <option value="school of business">school of business</option>
+                </select>
+           
+            </div>
+
+
+            <div class="course-of-study">
+                   <label for="course-of-study" class="capitalize">
+               choose course of study
+                <span class="required">*</span>
+
+                <select name="course-of-study">
+                    <option value="school of creativity">school of creativity</option>
+                    <option value="school of business">school of business</option>
+                </select>
+           
+            </div>
+          </section>
+          <section class="form-group">
+             <div class="information-channel">
+                   <label for="channel" class="">
+               How did you hear about us?
+                <span class="required">*</span>
+
+                <select name="channel">
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Linkedin">Linkedin</option>
+                    <option value="Facebook">Facebook</option>
+
+                </select>
+           
+            </div>
+          </section>
 
           <section class="form-terms-condition"></section>
           <section class="form-button"></section>
