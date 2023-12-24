@@ -25,60 +25,199 @@
 
 body,
 html {
-  font-family: Almarena !important;
+  font-family: Almarena;
   height: 100%;
   width: 100%;
   margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: AlmarenaDisplayLight !important;
 }
 
 :root {
   --alt-school-banner-color: rgb(255, 246, 238);
   --alt-shchool-form-heading-color: rgb(11, 30, 75);
+  --alt-school-input-border-radius: 4px;
+  --alt-school-secondary-color: rgb(106, 111, 245);
 }
 
 .container {
+  width: 100% !important;
+  height: 100vh !important;
+  overflow: hidden;
 }
 
 .banner {
   background-color: var(--alt-school-banner-color);
   padding: 20px;
   height: 100vh;
+  overflow-y: hidden !important;
 }
 
 .banner-heading {
-  font-size: 35px;
+  font-size: 51px;
+  text-align: center;
+  padding: 10px;
+}
+
+.banner-shape {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
 }
 
 .banner-shape-1 {
-  padding: 0 !important;
-  margin: 0 !important;
   transform: translate(20px, -100px);
 }
 
+.banner-shape-2 {
+  transform: translate(-20px, 0px);
+}
+
+.banner-description-text {
+  font-size: 22px;
+  text-align: center;
+}
+
+.banner-social-icons {
+  gap: 1rem;
+}
+
+i {
+  cursor: pointer;
+}
+
+#copyright {
+  color: #aaaaaa !important;
+  padding-top: 5px;
+  text-align: center;
+}
 .form {
-  padding: 30px;
+  padding: 20px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 form {
-  width: 90% !important;
+  width: 90%;
+  padding: 20px;
 }
 .form-heading {
   font-size: 2rem;
 }
 
+.form-header {
+  display: none !important;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem 0px;
+  background: rgb(106, 111, 245);
+  color: rgb(255, 255, 255);
+  font-family: Almarena, sans-serif;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  margin: 10px;
+}
+
+.button-2 {
+  width: 100px;
+}
 input,
 select {
-  width: 100%;
+  width: 400px;
   padding: 14px;
+  margin-top: 5px;
+  margin-right: 2rem;
+  margin-bottom: 1.3rem;
   box-sizing: border-box;
+  border: 1px solid rgb(216, 219, 223);
+  outline: none;
+  transition: border-color 0.3s ease;
+  border-radius: var(--alt-school-input-border-radius) !important;
+  font-family: AlmarenaDisplayLight !important;
+}
+
+input:focus,
+select:focus {
+  border-color: rgb(11, 30, 75);
+}
+a {
+  text-decoration: none;
+  color: var(--alt-school-secondary-color);
+}
+
+.have-an-account {
+  font-size: 14px;
+}
+/* Customize select element */
+select {
+  appearance: none !important;
+  background-color: transparent !important;
+  text-transform: capitalize !important;
+}
+
+/* Customize select options */
+select option {
+  background-color: ghostwhite !important;
+  padding: 10px !important;
+  color: #333;
+  text-transform: capitalize !important;
 }
 .form-group {
   margin: 10px;
 }
 
+.form-heading-container {
+  margin: 10px;
+  padding: 0px !important;
+  width: 100%;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 768px) {
+  .form-header {
+    display: flex !important;
+    margin: 0;
+  }
+
+  form {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .form {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: start !important;
+    margin: 0 !important;
+    padding: 2px !important;
+  }
+  .form-heading-container {
+    text-align: start !important;
+  }
+
+  .form-heading {
+    text-align: start !important;
+    margin: 0;
+    padding: 0;
+  }
   .banner {
-    display: none;
+    display: none !important;
+  }
+  .form-group {
+    flex-direction: column !important;
   }
 }

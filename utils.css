@@ -26,47 +26,47 @@
 
 /* Tailwind CSS equivalents */
 .justify-between {
-  justify-content: space-between !important;
+  justify-content: space-between;
 }
 
 .justify-center {
-  justify-content: center !important;
+  justify-content: center;
 }
 
 .justify-end {
-  justify-content: flex-end !important;
+  justify-content: flex-end;
 }
 
 .justify-around {
-  justify-content: space-around !important;
+  justify-content: space-around;
 }
 
 .justify-evenly {
-  justify-content: space-evenly !important;
+  justify-content: space-evenly;
 }
 
 .items-start {
-  align-items: flex-start !important;
+  align-items: flex-start;
 }
 
 .items-end {
-  align-items: flex-end !important;
+  align-items: flex-end;
 }
 
 .items-center {
-  align-items: center !important;
+  align-items: center;
 }
 
 .items-baseline {
-  align-items: baseline !important;
+  align-items: baseline;
 }
 
 .items-stretch {
-  align-items: stretch !important;
+  align-items: stretch;
 }
 
 .capitalize {
-  text-transform: capitalize !important;
+  text-transform: capitalize;
 }
 .required {
   color: red;
@@ -75,6 +75,26 @@
   overflow-x: hidden;
 }
 
-w-80 {
+.w-80 {
   width: 80% !important;
+}
+.w-90 {
+  width: 90% !important;
+}
+
+.breaker {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.icon {
+  padding-right: 3px;
 }
