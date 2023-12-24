@@ -48,9 +48,9 @@
     />
   </head>
   <body>
-    <main class="container flex">
+    <main class="container flex w-full h-screen justify-center">
       <!-- We've 2 sections in the page, the image kinda section and the application form -->
-      <section class="banner">
+      <section class="banner w-screen h-screen flex flex-col  overflow-x-hidden">
         <section class="banner-header">
           <svg
             width="80"
@@ -65,7 +65,7 @@
           </svg>
         </section>
 
-        <section class="banner-shape banner-shape-1">
+        <section class="banner-shape banner-shape-1 flex w-full items-end justify-end">
           <svg
             class="style_rightEllipseImg__SHT9C"
             width="150"
@@ -97,8 +97,8 @@
           </svg>
         </section>
 
-        <section class="banner-heading">
-          <h1>Learn highly sought after skills without hassle</h1>
+        <section class="banner-heading-container">
+          <h1 class="banner-heading capitalize">Learn highly sought after skills without hassle</h1>
         </section>
         <section class="banner-description">
           <p>Earn a Diploma in highly-sought after skills.</p>
@@ -115,14 +115,14 @@
         </section>
       </section>
 
-      <section class="form">
-        <section class="form-heading">
-          <h1>application form</h1>
+      <section class="form w-screen h-screen flex flex-col">
+        <section class="w-80">
+          <h1 class="form-heading capitalize">application form</h1>
           <p>Fill in your details</p>
         </section>
 
         <form>
-          <section class="form-group">
+          <section class="form-group flex w-full items-center justify-between">
             <div class="firstname">
                   <label for="first-name" class="capitalize">
                 first name
@@ -140,7 +140,7 @@
             </div>
           </section>
 
-          <section class="form-group">
+          <section class="form-group flex w-full items-center justify-between">
             <div class="gender">
                    <label for="gender" class="capitalize">
                 gender 
@@ -160,7 +160,7 @@
              <input type="date" >
             </div>
           </section>
-          <section class="form-group">
+          <section class="form-group flex w-full items-center justify-between">
             <div class="email-address">
                    <label for="email-address" class="capitalize">
                 email address
@@ -189,7 +189,7 @@
            
             </div>
           </section>
-          <section class="form-group">
+          <section class="form-group flex w-full items-center justify-between">
             <div class="country">
                <label for="country" class="capitalize">
                country
@@ -208,7 +208,7 @@
 <input type="text" placeholder="Enter your state of residence">
             </div>
           </section>
-          <section class="form-group">
+          <section class="form-group flex w-full items-center justify-between">
 
                <div class="employment-status">
                    <label for="employment-status" class="capitalize">
@@ -230,7 +230,7 @@
 <input type="text" placeholder="Enter your phone number">
             </div>
           </section>
-          <section class="form-group">
+          <section class="form-group flex w-full items-center justify-between">
                <div class="school">
                    <label for="school" class="capitalize">
                choose school
@@ -256,7 +256,7 @@
            
             </div>
           </section>
-          <section class="form-group">
+          <section class="form-group flex w-full items-center justify-between">
              <div class="information-channel">
                    <label for="channel" class="">
                How did you hear about us?
@@ -269,6 +269,15 @@
                     <option value="Facebook">Facebook</option>
 
                 </select>
+           
+            </div>
+
+              <div class="discount">
+                   <label for="discount" class="">
+              Scholarship/Discount Code (optional)
+                <span class="required">*</span>
+
+              <input type="text" placeholder="Scholarship or student ID or discount codes" name="discount">
            
             </div>
           </section>

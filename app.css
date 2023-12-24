@@ -33,17 +33,46 @@ html {
 
 :root {
   --alt-school-banner-color: rgb(255, 246, 238);
+  --alt-shchool-form-heading-color: rgb(11, 30, 75);
 }
 
-.container{
-    
+.container {
 }
 
 .banner {
   background-color: var(--alt-school-banner-color);
   padding: 20px;
-  max-width: 100%;
-  height: auto;
+  height: 100vh;
+}
+
+.banner-heading {
+  font-size: 35px;
+}
+
+.banner-shape-1 {
+  padding: 0 !important;
+  margin: 0 !important;
+  transform: translate(20px, -100px);
+}
+
+.form {
+  padding: 30px;
+}
+form {
+  width: 90% !important;
+}
+.form-heading {
+  font-size: 2rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+}
+.form-group {
+  margin: 10px;
 }
 
 /* Media Query */
