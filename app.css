@@ -57,7 +57,7 @@ p {
 }
 
 .banner-heading {
-  font-size: 51px;
+  font-size: 41px;
   text-align: center;
   padding: 10px;
 }
@@ -66,6 +66,7 @@ p {
   padding: 0 !important;
   margin: 0 !important;
   position: relative;
+  height: 14vh !important;
 }
 
 .banner-shape-1 {
@@ -135,7 +136,7 @@ form {
 }
 input,
 select {
-  width: 400px;
+  width: 270px;
   padding: 14px;
   margin-top: 5px;
   margin-right: 2rem;
@@ -183,7 +184,13 @@ select option {
   padding: 0px !important;
   width: 100%;
 }
-
+/* **************************** */
+.about_me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* **************************** */
 /* Media Query */
 
 @media screen and (max-width: 768px) {
