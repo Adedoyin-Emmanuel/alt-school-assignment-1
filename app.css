@@ -177,12 +177,21 @@ select option {
 }
 .form-group {
   margin: 10px;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .form-heading-container {
   margin: 10px;
   padding: 0px !important;
   width: 100%;
+}
+.form-group label {
+  width: 100%;
+}
+.input_space {
+  display: flex !important;
+  flex-direction: column;
 }
 /* **************************** */
 .about_me {
