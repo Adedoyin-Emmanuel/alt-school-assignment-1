@@ -4,5 +4,5 @@ This repo contains the 1st assignment for the Software Engineering First Semeste
 
 # Contributors 🧔
 
-Adedoyin Emmanuel Adeniyi
-Waleed Ishfaq 
+- Adedoyin Emmanuel Adeniyi
+- Waleed Ishfaq 
