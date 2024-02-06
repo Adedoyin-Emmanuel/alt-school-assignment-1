@@ -57,7 +57,7 @@ p {
 }
 
 .banner-heading {
-  font-size: 51px;
+  font-size: 41px;
   text-align: center;
   padding: 10px;
 }
@@ -66,6 +66,7 @@ p {
   padding: 0 !important;
   margin: 0 !important;
   position: relative;
+  height: 14vh !important;
 }
 
 .banner-shape-1 {
@@ -135,11 +136,9 @@ form {
 }
 input,
 select {
-  width: 400px;
+  width: 100%;
   padding: 14px;
-  margin-top: 5px;
-  margin-right: 2rem;
-  margin-bottom: 1.3rem;
+  margin: 0.8rem 0;
   box-sizing: border-box;
   border: 1px solid rgb(216, 219, 223);
   outline: none;
@@ -176,6 +175,9 @@ select option {
 }
 .form-group {
   margin: 10px;
+  display: grid !important;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .form-heading-container {
@@ -183,7 +185,20 @@ select option {
   padding: 0px !important;
   width: 100%;
 }
-
+.form-group label {
+  width: 100%;
+}
+.input_space {
+  display: flex !important;
+  flex-direction: column;
+}
+/* **************************** */
+.about_me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* **************************** */
 /* Media Query */
 
 @media screen and (max-width: 768px) {
