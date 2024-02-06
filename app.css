@@ -136,11 +136,9 @@ form {
 }
 input,
 select {
-  width: 270px;
+  width: 100%;
   padding: 14px;
-  margin-top: 5px;
-  margin-right: 2rem;
-  margin-bottom: 1.3rem;
+  margin: 0.8rem 1rem 0.8rem 0;
   box-sizing: border-box;
   border: 1px solid rgb(216, 219, 223);
   outline: none;
@@ -178,6 +176,7 @@ select option {
 .form-group {
   margin: 10px;
   display: grid !important;
+  gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
